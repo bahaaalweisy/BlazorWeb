@@ -1,0 +1,101 @@
+﻿@using Microsoft.AspNetCore.Components;
+@inject NavigationManager Navigation
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BlazorWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BlazorWeb.styles.css" asp-append-version="true" />
+    <script src="~/controllersscripts/datatables/jquery-3.5.1.min.js"></script>
+    <link href="~/css/jquery.datatables.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">BlazorWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                    
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="DeleteModal" class="modal" style="display: block;">
+            <div class="modal-content" id="modalcontent" style="width: 347px; height: 307px;">
+                <div class="modal-body text-center" style="margin-top: 2rem;">
+                    <img src="~/images/31-check-outline (2).svg" style="width: 89px;height: 89px;" />
+                    <p id="errorMessage">Deleted successfully </p>
+                </div>
+            </div>
+        </div>
+        <div id="confirmationPopup" class="modal" style="display: none;">
+            <div class="modal-content" id="modalcontentconfirm" style="width: 347px;height: 307px;">
+                <div class="modal-body">
+                    <div style="text-align: center; margin-top: 3rem; ">
+                        <p class="canceltxt">Are you sure to cancel</p>
+                    </div>
+                    <div style="margin-top: 6rem; margin-left: 2.7rem; margin-right: 2rem;">
+                        <input id="mr" class="btn btn-primary btn-sm" onclick="hideConfirmationPopup()" value="Confirm" />
+                        <input id="float" class="btn btn-outline-info btn-sm" onclick="confirmCancel()" value="Cancel" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="successModal" class="modal" style="display: block;">
+            <div class="modal-content" id="modalcontent" style="width: 347px;height: 307px;">
+                <div class="modal-body text-center" style="margin-top: 2rem;">
+                    <img src="~/images/31-check-outline (2).svg" style="width: 89px;height: 89px;" />
+                    <p id="successMessage">Added Successfully</p>
+                </div>
+            </div>
+        </div>
+        <div id="successEditModal" class="modal" style="display: block;">
+            <div class="modal-content" id="modalcontent" style="width: 347px;height: 307px;">
+                <div class="modal-body text-center" style="margin-top: 2rem;">
+                    <img src="~/images/31-check-outline (2).svg" style="width: 89px;height: 89px;" />
+                    <p id="successMessage">Modified successfully</p>
+                </div>
+            </div>
+        </div>
+        <div id="errorModal" class="modal" style="display: block;">
+            <div class="modal-content" id="modalcontent" style="width: 347px; height: 307px;">
+                <div class="modal-body text-center" style="margin-top: 2rem;">
+                    <img src="~/images/cancel.svg" style="width: 89px; height: 89px;" />
+                    <p id="errorMessage"> Notsaved </p>
+                </div>
+            </div>
+        </div>
+        <main role="main" class="pb-3" id="ContentMain">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - BlazorWeb
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/controllersscripts/datatables/jquery-ui.js"></script>
+    <link href="~/css/jquery-ui.css" rel="stylesheet" />
+    <script src="~/controllersscripts/datatables/jquery.datatables.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,443 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+#errorModal {
+    z-index: 1060;
+}
+
+div#errorModal {
+    display: none !important;
+    z-index: 2;
+}
+
+#errorModal2 {
+    z-index: 1060;
+}
+
+div#errorModal2 {
+    display: none !important;
+    z-index: 2;
+}
+
+.btn-outline-info:hover {
+    color: white !important;
+}
+
+td {
+    height: 58px !important;
+    font-size: 13px !important;
+}
+
+th.sorting {
+    font-size: 14px !important;
+}
+
+.modal-body.text-center {
+    margin-top: 4rem !important;
+}
+
+div#dialog-confirm1 {
+    display: none;
+}
+
+div#editUserModal1 {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+div#AddUserModal1 {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+a#myBtn5 {
+    background-color: #7254A3;
+    width: 50%;
+    padding-top: 10px;
+    border: #7254A3 !important;
+    border-radius: 7px;
+}
+
+.modal-content {
+    width: 82% !important;
+}
+
+h4.card-title {
+    color: #7254A3;
+}
+
+span#Normal {
+    background-color: white;
+    border: 0.5px solid #35D5B0;
+    color: #35D5B0;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    width: 7rem;
+}
+
+span#Emergency {
+    background-color: white;
+    border: 0.5px solid #EF3C3C;
+    color: #DB256E;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    width: 7rem;
+}
+
+.btn-outline-info:hover {
+    color: #000;
+    background-color: #7254A3;
+    border-color: #7254A3;
+}
+
+button#float {
+    color: #7254A3;
+    margin-right: 10px;
+    padding: 0px;
+    width: 105px;
+    height: 28px;
+    line-height: 1px;
+    border-radius: 6px;
+    border-color: #7254A3;
+}
+
+input#float {
+    color: #7254A3;
+    margin-right: 10px;
+    padding: 0px;
+    width: 105px;
+    height: 28px;
+    line-height: 1px;
+    border-radius: 6px;
+    border-color: #7254A3;
+}
+
+input#mr {
+    margin-right: 10px;
+    padding: 0px;
+    background-color: #7254A3 !important;
+    color: white;
+    width: 105px !important;
+    height: 28px !important;
+    line-height: 1px;
+    border-radius: 6px !important;
+}
+
+
+
+
+div#editUserModal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 82%;
+    height: 100%;
+    overflow: auto;
+}
+
+div#AddUserModal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 82%;
+    height: 100%;
+    overflow: auto;
+}
+
+a#myBtn5 {
+    background-color: #7254A3;
+}
+
+.modal-content {
+    width: 82% !important;
+}
+
+h4.card-title {
+    color: #7254A3;
+}
+
+button.ui-dialog-titlebar-close {
+    background-image: url('../images/ui-icons_777777_256x240.png');
+}
+
+a.btn.btn-danger {
+    margin-left: 1.5rem;
+}
+
+
+
+
+
+
+
+.table tbody tr td {
+    vertical-align: middle;
+    border-color: white !important;
+}
+
+.table thead th {
+    border-color: #ffffff !important;
+}
+
+th.sorting {
+    color: #464A53 !important;
+}
+
+#errorModal {
+    z-index: 1060;
+}
+
+#errorModal2 {
+    z-index: 1060;
+}
+
+div#errorModal {
+    display: none !important;
+    z-index: 2;
+}
+
+div#errorModal2 {
+    display: none !important;
+    z-index: 2;
+}
+
+.header-right .notification_dropdown .nav-link {
+    background: transparent !important
+}
+/* The Modal */
+div#successModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: #0D0D0D80;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+div#successEditModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: #0D0D0D80;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+
+div#modalcontent {
+    max-width: 347px;
+    max-height: 307px;
+}
+
+div#errorModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0D0D0D80;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+div#errorModal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0D0D0D80;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+div#DeleteModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0D0D0D80;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+div#successModal {
+    padding-top: 6rem;
+}
+
+div#successEditModal {
+    padding-top: 6rem;
+}
+
+div#errorModal {
+    padding-top: 6rem;
+}
+
+div#errorModal2 {
+    padding-top: 6rem;
+}
+
+div#DeleteModal {
+    padding-top: 6rem;
+}
+
+
+div#errorModal {
+    display: none !important;
+}
+
+div#errorModal2 {
+    display: none !important;
+}
+
+div#DeleteModal {
+    display: none !important;
+}
+
+div#modalcontent {
+    background-color: #fefefe;
+    margin: 15% 41% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+p#successMessage {
+    font-size: 20px;
+    color: #707070;
+}
+
+p#errorMessage {
+    font-size: 20px;
+    color: #707070;
+}
+
+div#errorModal {
+    display: none !important;
+}
+
+div#errorModal2 {
+    display: none !important;
+}
+
+div#DeleteModal {
+    display: none !important;
+}
+
+div#successModal {
+    display: none !important;
+}
+
+div#successEditModal {
+    display: none !important;
+}
+
+div#confirmationPopup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: #0D0D0D80;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+div#modalcontentconfirm {
+    max-width: 347px;
+    max-height: 307px;
+}
+
+p.canceltxt {
+    font-size: larger;
+    font-weight: 800;
+    color: #6D559E;
+}
+
+input#float {
+    color: #7254A3;
+    margin-right: 10px;
+    padding: 0px;
+    width: 105px;
+    height: 28px;
+    line-height: 1px;
+    border-radius: 6px;
+    border-color: #7254A3;
+}
+
+input#mr {
+    margin-right: 10px;
+    padding: 0px;
+    background-color: #7254A3 !important;
+    color: white;
+    width: 105px !important;
+    height: 28px !important;
+    line-height: 1px;
+    border-radius: 6px !important;
+}
+
+.btn-outline-info:hover {
+    color: white !important;
+    background-color: #7254A3;
+    border-color: #7254A3;
+}
+
